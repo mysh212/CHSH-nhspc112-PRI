@@ -55,7 +55,7 @@
 
 ***Cyana*** 一開始須站在座標 $(0,0)$ ，每回合 ***Cyana*** 須向 $+x, -x, +y, -y$ 四種方向中挑一種並移動一單位。
 
-給定一條直線 $y = ax + b, a \in \{-1,1\}$
+給定一條直線 $y = ax + b, a \in \\{-1,1\\}$
 
 經過 $k$ 個回合後，如果 ***Cyana*** 在該線上則獲勝
 
@@ -70,7 +70,7 @@
 :::spoiler ***easier version***
 有一個遊戲，玩家須站在座標 $(0,0)$ ，每回合玩家須向 $+x, -x, +y, -y$ 方向移動一單位。
 
-給定一條直線 $y = ax + b, a \in \{-1,1\}$
+給定一條直線 $y = ax + b, a \in \\{-1,1\\}$
 
 現在請你答出 $k$ 個回合以後，玩家是否有任何在線上的可能?
 :::
@@ -131,7 +131,7 @@ YES
 
 ### ***Note***
 
-$a \in \{-1,1\}$
+$a \in \\{-1,1\\}$
 
 $-10^{18} \leq b,k_i \leq 10^{18}, \forall\ 1 \leq i \leq m$
 
@@ -259,7 +259,7 @@ $x,y \in Z$
  - ***subtask3***: $3\\%$ $n \leq 3,\ -10^2 \leq x_i,y_i \leq 10^2$
  - ***subtask4***: $4\\%$ $n \leq 10,\ -10^2 \leq x_i,y_i \leq 10^2$
  - ***subtask5***: $20\\%$ $n \leq 10^3,\ -10^3 \leq x_i,y_i \leq 10^3$
- - ***subtask6***: $10\\%$ $(x_i \in \{r|r = x_1\}, 1 \leq i \leq n) \vee (y_i \in \{r|r = y_1\}, 1 \leq i \leq n)$
+ - ***subtask6***: $10\\%$ $(x_i \in \\{r|r = x_1\\}, 1 \leq i \leq n) \vee (y_i \in \\{r|r = y_1\\}, 1 \leq i \leq n)$
  - ***subtask7***: $30\\%$ $n \leq 2 \times 10^4$
  - ***subtask8***: $30\\%$ ***As statement***
 
@@ -322,7 +322,7 @@ $ans_T$
 7
 13
 ```
-###
+### ***Note***
 
 $1 \leq a, b, c \leq 9$\
 $1 \leq T \leq 729$
@@ -357,35 +357,6 @@ $11 \times 1=11$
 共有7個不同的答案
 
 <div style="page-break-after: always"></div>
-
-第二筆測資可以組成運算結果非負的運算式(由於太多對於結果一樣的只列出一次):\
-$1+2+2=5$
-
-$1+2-2=1$
-
-$1-2+2=3$
-
-$1 \times 2+2=4$
-
-$1 \times 2-2=0$
-
-$1+22=23$
-
-$1 \times 22=22$
-
-$12+2=14$
-
-$12-2=10$
-
-$12 \times 2=24$
-
-$21-2=19$
-
-$21 \times 2=42$
-
-$22-1=21$
-
-共有13個不同的答案
 
 ### ***Subtask***
 
@@ -492,6 +463,7 @@ $1 \leq h_i \leq 10^4$
  - ***subtask2***: $79\\%$ ***As statement***
 
 <div style="page-break-after: always"></div>
+
 
 ## **E. 文字獄** ***<font color = '#AAAAAA'> Literary prison</font>***
 

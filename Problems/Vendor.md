@@ -109,7 +109,7 @@ $x,y \in Z$
  - ***subtask3***: $3\\%$ $n \leq 3,\ -10^2 \leq x_i,y_i \leq 10^2$
  - ***subtask4***: $4\\%$ $n \leq 10,\ -10^2 \leq x_i,y_i \leq 10^2$
  - ***subtask5***: $20\\%$ $n \leq 10^3,\ -10^3 \leq x_i,y_i \leq 10^3$
- - ***subtask6***: $10\\%$ $(x_i \in \{r|r = x_1\}, 1 \leq i \leq n) \vee (y_i \in \{r|r = y_1\}, 1 \leq i \leq n)$
+ - ***subtask6***: $10\\%$ $(x_i \in \\{r|r = x_1\\}, 1 \leq i \leq n) \vee (y_i \in \\{r|r = y_1\\}, 1 \leq i \leq n)$
  - ***subtask7***: $30\\%$ $n \leq 2 \times 10^4$
  - ***subtask8***: $30\\%$ ***As statement***
 
