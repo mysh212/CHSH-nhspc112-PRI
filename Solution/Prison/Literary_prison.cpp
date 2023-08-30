@@ -14,10 +14,10 @@ void solve(){
     }
     int i = 0;
     ll ans = 0;
-    for(auto it = nums.begin(); it != nums.end(); it++, i++){
+    for(auto it = nums.rbegin(); it != nums.rend(); it++){
         int x = *it;
         if(x >= 7) ++x;
-        ans += x * pow(10, i);
+        ans = ans * 10 + x;
     }
     cout << ans << endl;
 }
