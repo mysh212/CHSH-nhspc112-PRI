@@ -30,6 +30,11 @@ void solve(){
                 else if(x == "-") num = a - b;
                 else num = a * b;
 
+                if(num >= 0){
+                    if(!se.count(num)){
+                        cerr << a << x << b << '=' << num << endl;
+                    }
+                }
                 if(num >= 0) se.insert(num);
             }
         }
@@ -41,11 +46,16 @@ void solve(){
             if(x[0] == '+' && x[1] == '*') num = a + b * c;
             if(x[0] == '-' && x[1] == '+') num = a - b + c;
             if(x[0] == '-' && x[1] == '-') num = a - b - c;
-            if(x[0] == '+' && x[1] == '-') num = a - b * c;
+            if(x[0] == '-' && x[1] == '*') num = a - b * c;
             if(x[0] == '*' && x[1] == '+') num = a * b + c;
             if(x[0] == '*' && x[1] == '-') num = a * b - c;
             if(x[0] == '*' && x[1] == '*') num = a * b * c;
             
+            if(num >= 0){
+                if(!se.count(num)){
+                    cerr << a << x[0]  << b  << x[1] << c << '=' << num << endl;
+                }
+            }
             if(num >= 0) se.insert(num);
         }
     }while(next_permutation(s.begin(), s.end()));
