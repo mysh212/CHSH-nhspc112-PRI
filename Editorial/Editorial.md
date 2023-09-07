@@ -6,6 +6,83 @@
 
 ## **B. 專賣店** ***<font color = '#AAAAAA'>Vendor</font>***
 
+### 問題
+
+給你 $n$ 個點
+
+$(x_i,y_i),\ 1 \leq i \leq n$
+
+請求出 $\displaystyle \min \big[\sum_{k=1}^n \sqrt{(x - x_i)^2+(y - y_i)^2}\big]$
+
+### ***subtask1***: $1\\%$ $n \leq 1,\ -10^2 \leq x_i,y_i \leq 10^2$
+
+直接輸出該座標即可
+
+### ***subtask2***: $2\\%$ $n \leq 2,\ -10^2 \leq x_i,y_i \leq 10^2$
+
+輸出任一組座標
+
+### ***subtask3***: $3\\%$ $n \leq 3,\ -10^2 \leq x_i,y_i \leq 10^2$
+
+算出外心座標,輸出附近整數點中總距離最小的
+
+### ***subtask4***: $4\\%$ $n \leq 10,\ -10^2 \leq x_i,y_i \leq 10^2$
+
+唬爛用, $O(4 \times 10^{12} \times n)\ O(2 \times 10^6 \times n)$ 都會過
+
+### ***subtask5***: $20\\%$ $n \leq 10^3,\ -10^3 \leq x_i,y_i \leq 10^3$
+
+過渡測資
+
+### ***subtask6***: $10\\%$ $(x_i \in \\{r|r = x_1\\}, 1 \leq i \leq n) \vee (y_i \in \\{r|r = y_1\\}, 1 \leq i \leq n)$
+
+所有點連成一直線,輸出最中間的座標即可
+
+### ***subtask7***: $30\\%$ $n \leq 2 \times 10^4$
+
+可以發現固定 $x$ 或 $y$ 座標時, 總距離與另一座標所成的函數為凹函數
+
+$pf:$
+
+$$
+[\sqrt{(x - x_i)^2+(y - y_i)^2}]'\\
+ = \frac{1}{2}[(x - x_i)^2+(y - y_i)^2] ^ {-\frac{1}{2}} \times 2(x - x_i)\\
+ = [(x - x_i)^2+(y - y_i)^2] ^ {-\frac{1}{2}}(x - x_i)\\
+ = \frac{(x - x_i)}{\sqrt{(x - x_i)^2+(y - y_i)^2}}
+$$
+
+$$
+\displaystyle
+\text{let } \frac{(x - x_i)}{\sqrt{(x - x_i)^2+(y - y_i)^2}} = f'(x)\\
+\frac{(x - x_i)}{\sqrt{(x - x_i)^2+(y - y_i)^2}} = 0\\
+\lim_{x \rightarrow x_i-} f'(x) < 0 \text{ and } \lim_{x \rightarrow x_i+} f'(x) > 0\\
+\text{When } x = x_i,\ f(x) \text{ has minimum value } f(x_i)
+$$
+
+既然為凹函數,我們只要針對目前函數的切線斜率做二分搜即可
+
+因此我們對 $x$ 做二分搜,每次對 $y$ 再做一次二分搜,找出 **固定** $x$ **座標時,所能產生的最小總距離** 並且對 $x - 1$ 或 $x + 1$ 再搜尋一次,用以比較斜率方向, 最後往凹口搜去即可
+
+時間複雜度 $O(n\ (log_2^n)^2)$
+
+### ***subtask8***: $30\\%$ ***As statement***
+
+但是我們可以發現其實不需要每次都完整地對 $y$ 做二分搜
+
+所以可以導出更有效率的算法 -- **倍增**
+
+由 $2$ **的次冪之和可以為任意正整數**
+
+我們每次對 $+x, -x, +y, -y$ 四種方向做測試
+
+每次測試嘗試 **跨出** $2^n$ **步** 如果跨出去的總距離比目前的小,則將目前的點改為該點
+
+四種方向測試完成後讓 $n$ 遞減
+
+但由於有 $x, y$ 兩種軸, 因此為了確保總距離最小, 需對此四個方向再測試一次
+
+時間複雜度 $O(n\ log_2^n)$
+
 <div style="page-break-after: always"></div>
 
 ## **C. E班的復仇** ***<font color = '#AAAAAA'> The revenge of class E</font>***
