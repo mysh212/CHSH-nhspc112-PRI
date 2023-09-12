@@ -19,6 +19,7 @@
    - [如何補題](https://mysh212.github.io/CHSH-nhspc112-PRI/Docs/)
 
 > 感謝 ***mysh212*** ***Gamic1234*** ***Derek0*** ***detaomega*** 出題、驗題
+
 > 感謝 ***Mingyee*** ***mysh212*** ***Gamic1234*** ***Derek0*** 負責線上賽出題
 
 ![HARC](css/HARC.png)
