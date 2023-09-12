@@ -1,5 +1,10 @@
 # 彰化高中112學年度資訊學科能力競賽校內複選 題解
 
+簡報:
+`mysh212`: [slido](https://slides.com/ysh-1/deck/fullscreen)
+`Gamic1234`: [PDF](https://github.com/mysh212/CHSH-nhspc112-PRI/blob/master/Editorial/112_Gamic_.pdf)
+`Derek0`: [PDF](https://github.com/mysh212/CHSH-nhspc112-PRI/blob/master/Editorial/CHSH_nhspc112_PRI_editorial.pdf)
+
 ## **A. 二維座標** ***<font color = '#AAAAAA'> Walk </font>***
 
 <div style="page-break-after: always"></div>
