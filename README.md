@@ -1,4 +1,5 @@
-# 彰化高中112學年度學科能力競賽 校內複賽
+# **彰化高中112學年度學科能力競賽 校內複賽**
+
  - [排名 ***<font color='#AAAAAA'>Rank</font>***](https://mysh212.github.io/CHSH-nhspc112-PRI/Ranking/)
  - [官解 ***<font color='#AAAAAA'>Solution</font>***](https://github.com/mysh212/CHSH-nhspc112-PRI/tree/master/Solution)
  - [審題者 ***<font color='#AAAAAA'>Tester</font>***](https://mysh212.github.io/CHSH-nhspc112-PRI/Tester)
@@ -13,4 +14,8 @@
  - [文件](https://github.com/mysh212/CHSH-nhspc112-PRI/tree/master/Docs)
    - [如何補題](https://mysh212.github.io/CHSH-nhspc112-PRI/Docs/)
 
-***CHSH X HARC***
+> 感謝 ***mysh212*** ***Gamic1234*** ***Derek0*** ***detaomega*** 出題、驗題
+
+![HARC](css/HARC.png)
+
+***HARC X CHSH***
