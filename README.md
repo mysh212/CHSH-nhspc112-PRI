@@ -1,5 +1,10 @@
 # **彰化高中112學年度學科能力競賽 校內複賽**
 
+> 本次彩蛋解出者:
+> `104 陳威任`
+> `119 王閔邑`
+> 恭喜
+
  - [排名 ***<font color='#AAAAAA'>Rank</font>***](https://mysh212.github.io/CHSH-nhspc112-PRI/Ranking/)
  - [官解 ***<font color='#AAAAAA'>Solution</font>***](https://github.com/mysh212/CHSH-nhspc112-PRI/tree/master/Solution)
  - [審題者 ***<font color='#AAAAAA'>Tester</font>***](https://mysh212.github.io/CHSH-nhspc112-PRI/Tester)
@@ -14,6 +19,7 @@
    - [如何補題](https://mysh212.github.io/CHSH-nhspc112-PRI/Docs/)
 
 > 感謝 ***mysh212*** ***Gamic1234*** ***Derek0*** ***detaomega*** 出題、驗題
+> 感謝 ***Mingyee*** ***mysh212*** ***Gamic1234*** ***Derek0*** 負責線上賽出題
 
 ![HARC](css/HARC.png)
 
