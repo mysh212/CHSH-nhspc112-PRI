@@ -1,0 +1,56 @@
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #ececec;
+	border: 0px solid #cccccc;
+	border-radius: 5px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	padding: 3px 10px;
+	background: #ececec;
+	border-radius: 5px;
+	color: #0e0d0d; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+/* footer: <div     style="z-index:5;font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif, 'Meiryo';font-size: 9px;letter-spacing: 0.06em; margin-left: 0.75cm;width:540px;">     <div         style="margin-bottom: -5px;border-top: 1px solid #000000;padding-top: 10px; justify-content:space-between; display:flex;">         <span>彰化高中 112學年度 資訊學科能力競賽 初賽</span><span><font color = '#AAAAAA'>ysh<sup>ST</sup> 2023</font></span></div>     <div style="justify-content:center; display:flex;">         <div style="font-size: 9px;">&#10022; <span class='pageNumber'></span> / <span class='totalPages'></span>             &#10022;</div>     </div> </div> */
